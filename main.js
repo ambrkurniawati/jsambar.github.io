@@ -106,3 +106,36 @@ const items = [
 console.log(items);
 console.log(items.makeup); //jawabannya undefined
 console.log(items[1]);
+
+const vocals = [
+  { name: "Kim Doyoung", age: 25 },
+  { name: "Moon Taeil", age: 27 },
+  { name: "Lee Haechan", age: 21 },
+];
+for (let i = 0; i < vocals.length; i++) {
+  const vocal = vocals[i];
+  console.log(`My name is ${vocal.name}`);
+  console.log(`I am ${vocal.age} years old`);
+}
+
+//Object bersarang
+const about = {
+  name: "Ambar Kurniawati",
+  age: 23,
+  favourite: {
+    food: "mie goreng",
+    drink: "teh manis",
+    group: "nct",
+  },
+};
+console.log(about.name);
+console.log(about.age);
+console.log(about.favourite);
+console.log(about.favourite.group);
+
+//function -> const functionName = function() {code};
+const hellofuture = function () {
+  console.log("nct");
+  console.log("dream");
+};
+hellofuture();
